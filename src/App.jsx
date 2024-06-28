@@ -23,6 +23,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='*' element={<Page404 />} />
         </Route>
+        <Route path='*' element={<Page404 />} />
       </Routes>
     </>
   );
