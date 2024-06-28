@@ -1,0 +1,219 @@
+.sarina-regular {
+    font-family: "Sarina", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rufina-regular {
+    font-family: "Rufina", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rufina-bold {
+    font-family: "Rufina", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.sansita-regular {
+    font-family: "Sansita", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sansita-bold {
+    font-family: "Sansita", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.sansita-extrabold {
+    font-family: "Sansita", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.sansita-black {
+    font-family: "Sansita", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.sansita-regular-italic {
+    font-family: "Sansita", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.sansita-bold-italic {
+    font-family: "Sansita", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.sansita-extrabold-italic {
+    font-family: "Sansita", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.sansita-black-italic {
+    font-family: "Sansita", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.sansita-swashed-p {
+    font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+
+
+}
+
+.navbar ul {
+    display: flex;
+
+}
+
+.navbar ul li {
+    padding-right: 20px;
+    transition: .5s;
+}
+
+.navbar ul li:hover,
+.navbar ul li.active {
+    color: #6EAFFB;
+    cursor: pointer;
+}
+
+.hero {
+    height: 600px;
+    display: flex;
+}
+
+.hero-left {
+    width: 60%;
+    height: 100%;
+
+    padding: 10px;
+}
+
+.hero-right {
+    width: 40%;
+    height: 100%;
+    padding: 10px;
+
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.btn {
+    width: 400px;
+    letter-spacing: 1px;
+
+
+
+}
+
+.btn-1,
+.btn-2 {
+    overflow: hidden;
+}
+
+.btn-1 {
+    position: relative;
+    background-color: #6EAFFB;
+    width: 150px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+
+    border-radius: 5px;
+
+    z-index: 1;
+}
+
+
+
+.btn-1::before,
+.btn-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #32384E;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-1:hover::before,
+.btn-2:hover::before {
+    width: 100%;
+}
+
+
+.btn-1:hover {
+    background-color: #32384E;
+    width: 150px;
+    font-weight: 500;
+
+    border-radius: 5px;
+    border: 2px solid #6EAFFB;
+    cursor: pointer;
+}
+
+.btn-2 {
+    position: relative;
+    background-color: #32384E;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+
+
+    font-weight: 500;
+    border-radius: 5px;
+    border: 2px solid #6EAFFB;
+
+    z-index: 1;
+}
+
+.btn-2:hover {
+    background-color: #6EAFFB;
+    width: 150px;
+    font-weight: 500;
+
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.home-imgHover {
+    position: absolute;
+    top: 100px;
+    right: 30px;
+    width: 600px;
+    height: 70%;
+    background: transparent;
+    transition: 3s;
+
+}
+
+.home-imgHover:hover {
+    background: #32384E;
+    opacity: .8;
+}
