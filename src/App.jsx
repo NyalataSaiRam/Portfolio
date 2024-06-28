@@ -6,6 +6,7 @@ import Projects from './components/projects.component';
 import About from './components/about.component';
 import Contact from './components/contact.component';
 import { useState } from 'react';
+import Page404 from './404.page';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path='/projects' element={<Projects />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='*' element={<Page404 />} />
         </Route>
       </Routes>
     </>
