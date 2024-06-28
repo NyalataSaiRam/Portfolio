@@ -49,10 +49,10 @@ const Contact = () => {
                     <h1 className='text-blue tracking-wider sansita-bold-italic'>contact me</h1>
                     <div className='mt-4'>
                         <form ref={form} onSubmit={sendEmail} className='flex flex-col justify-center' >
-                            <input name='user_name' placeholder='Full name' className='mb-5 rounded p-1 text-blue sansita-regular bg-blue/10 pl-3 pr-3' type="text" />
-                            <input name='user_email' placeholder='Email' className='mb-5 rounded p-1 text-blue sansita-regular bg-blue/10 pl-3 pr-3' type="email" />
-                            <input name='user_number' placeholder='Phone No.' className='mb-5 rounded p-1 text-blue sansita-regular bg-blue/10 pl-3 pr-3' type="text" />
-                            <textarea name='user_message' placeholder='Message' className='mb-5 rounded p-1 text-blue sansita-regular bg-blue/10 pl-3 pr-3' rows={6} />
+                            <input required name='user_name' placeholder='Full name' className='mb-5 rounded p-1 text-blue sansita-regular bg-blue/10 pl-3 pr-3' type="text" />
+                            <input required name='user_email' placeholder='Email' className='mb-5 rounded p-1 text-blue sansita-regular bg-blue/10 pl-3 pr-3' type="email" />
+                            <input required name='user_number' placeholder='Phone No.' className='mb-5 rounded p-1 text-blue sansita-regular bg-blue/10 pl-3 pr-3' type="text" />
+                            <textarea required name='user_message' placeholder='Message' className='mb-5 rounded p-1 text-blue sansita-regular bg-blue/10 pl-3 pr-3' rows={6} />
 
                             <button type='submit' className='btn-1 text-md flex items-center '>Send</button>
                         </form>
