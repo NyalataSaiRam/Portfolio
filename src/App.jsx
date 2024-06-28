@@ -11,15 +11,16 @@ import Page404 from './404.page';
 function App() {
 
   return (
-
     <>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Page404 />} />
+        <Route path="/" element={<Navbar />} >
+          <Route path="/" element={<Home />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='*' element={<Page404 />} />
+        </Route>
+        <Route path='*' element={<Page404 />} />
       </Routes>
     </>
   );

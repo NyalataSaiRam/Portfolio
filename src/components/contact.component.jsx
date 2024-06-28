@@ -58,7 +58,7 @@ const Contact = () => {
                         </form>
                     </div>
                 </div>
-                <div className=' w-[50%] h-[600px] p-10'>
+                <div className=' w-[50%] h-[550px] p-10'>
                     <img src={contactImg} alt="" />
                 </div>
 
